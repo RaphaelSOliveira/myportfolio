@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfólio on Raphael Serra de Oliveira</title>
+    <link>https://raphaelsoliveira.github.io/myportfolio/</link>
+    <description>Recent content in Portfólio on Raphael Serra de Oliveira</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Jul 2020 10:58:08 -0400</lastBuildDate>
+    
+	<atom:link href="https://raphaelsoliveira.github.io/myportfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Projeto 2: Detecção de Cliques Fraudulentos</title>
+      <link>https://raphaelsoliveira.github.io/myportfolio/post/project-2/</link>
+      <pubDate>Thu, 09 Jul 2020 10:58:08 -0400</pubDate>
+      
+      <guid>https://raphaelsoliveira.github.io/myportfolio/post/project-2/</guid>
+      <description>Foram analisados dados públicos da maior plataforma independente de serviço de big data da China que cobre mais de 70% dos dispositivos móveis ativos em todo o país. Eles processam 3 bilhões de cliques por dia, dos quais 90% são potencialmente fraudulentos. A partir dos dados históricos foi criado um modelo de classificação que avalia se um usuário fará o download de um aplicativo para celular depois de clicar em um anúncio.</description>
+    </item>
+    
+    <item>
+      <title>Projeto 1: Demanda de Produtos</title>
+      <link>https://raphaelsoliveira.github.io/myportfolio/post/project-1/</link>
+      <pubDate>Sat, 27 Jun 2020 11:00:59 -0400</pubDate>
+      
+      <guid>https://raphaelsoliveira.github.io/myportfolio/post/project-1/</guid>
+      <description>O Grupo Bimbo, atualmente, é uma das mais importantes empresas de panificação do mundo. Este projeto teve como objetivo criar um modelo que preveja a demanda real de produtos para evitar a perda e devolução dos mesmos. Os dados consistem no conjunto de transações de vendas durante 7 semanas no México. O modelo contruído alcançou uma média de acurácia de 99%. O algoritmo de regressão linear se mostrou muito eficaz para este conjunto de dados.</description>
+    </item>
+    
+    <item>
+      <title>Contato</title>
+      <link>https://raphaelsoliveira.github.io/myportfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://raphaelsoliveira.github.io/myportfolio/contact/</guid>
+      <description>Confira meu e-mail e as minhas redes sociais! Fique à vontade para entrar em contato.
+   Plataforma URL     email: rasr.oliveira@gmail.com   Linkedin: https://www.linkedin.com/in/raphaelsoliveira/   Github: https://github.com/RaphaelSOliveira    </description>
+    </item>
+    
+  </channel>
+</rss>
