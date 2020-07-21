@@ -224,7 +224,7 @@ Eles foram retirados do site <a href="https://www.kaggle.com/c/grupo-bimbo-inven
 Este site é amplamente utilizado por cientistas de dados que querem colocar o seu conhecimento à prova.
 Foi utilizada a técnica de estatística inferencial. A partir do dataset train.csv foi feita uma amostragem pois o data set original tem 3.2 GB e não estou utilizando nenhuma técnica de Big Data.</p>
 <h3 id="dicionário-de-dados">Dicionário de Dados:</h3>
-<table>
+<table id="t01">
 <thead>
 <tr>
 <th>Variável</th>
@@ -290,7 +290,7 @@ Foi utilizada a técnica de estatística inferencial. A partir do dataset train.
 <p align="justify">Primeiramente foram carregados os arquivos csv na memória do computar utilizando a ferramente RStudio.
 Arquivos: train.csv, town_state.csv, cliente_tabla.csv, producto_tabla.csv.</p>
 <p align="justify">Após isso verificada a dimensão dos dados de treino.</p>
-<table>
+<table id="t01">
 <thead>
 <tr>
 <th>Dimensão</th>
@@ -320,7 +320,7 @@ train_sample &lt;- train_dataset[train_sample_index,]
 <p align="justify">Verificada a proporção de dados por semana para confirmar se a amostragem foi homogênea para as semanas.</p>
 <pre><code>prop.table(table(train_dataset$Semana))
 </code></pre>
-<table>
+<table id="t01">
 <thead>
 <tr>
 <th>Semana</th>
@@ -362,7 +362,7 @@ train_sample &lt;- train_dataset[train_sample_index,]
 <h3 id="quantidade-de-valores-únicos-por-variável">Quantidade de valores únicos por variável</h3>
 <pre><code>prop.table(table(train_sample$Semana))
 </code></pre>
-<table>
+<table id="t01">
 <thead>
 <tr>
 <th>Variável</th>
@@ -421,7 +421,7 @@ train_sample &lt;- train_dataset[train_sample_index,]
 </code></pre>
 <p align="justify">Não foram encontrados valores missing no dataset.</p>
 <h3 id="analisando-a-variável-de-demanda-ajustada">Analisando a variável de demanda ajustada</h3>
-<table>
+<table id="t01">
 <thead>
 <tr>
 <th>Medida</th>
@@ -484,7 +484,7 @@ boxplot(train_sample_outlier, ylab= &quot;Demanda&quot;, main=&quot;Boxplot Dema
 
 <p align="justify">Aqui conseguimos ver onde há maior concentração de demanda de produtos.</p>
 <h3 id="analisando-a-variável-de-devolução-semanal-de-produtos">Analisando a variável de devolução semanal de produtos</h3>
-<table>
+<table id="t01">
 <thead>
 <tr>
 <th>Medida</th>
@@ -559,7 +559,7 @@ Porém, não é objetivo deste trabalho explorar exaustivamente os dados pois as
 Queremos ter uma visão geral. Caso a empresa necessitasse de uma informação específica, seria possível
 ir atrás de mais informações e insights.</p>
 <p align="justify"><strong>2) Tabelas de cadastro</strong></p>
-<table>
+<table id="t01">
 <thead>
 <tr>
 <th>Tabela</th>
@@ -618,7 +618,7 @@ varImpPlot(modelo_rf1,main=&quot;Importânica Variávies&quot;)
     scores &lt;- data.frame(actual = test$Demanda_uni_equil,
                       predicted = predict(modelo_lm, newdata = test[-11]))
 </code></pre>
-<table>
+<table id="t01">
 <thead>
 <tr>
 <th>Métrica</th>
