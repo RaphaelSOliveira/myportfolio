@@ -593,7 +593,7 @@ varImpPlot(modelo_rf1,main=&quot;Importânica Variávies&quot;)
 
 <p align="justify">Foram selecionadas as 7 primeiras variáveis do método IncNodePurity. Variáveis: Venta_uni_hoy + Venta_hoy + Canal_ID + Producto_ID + Ruta_SAK +  Cliente_ID + Agencia_ID.</p>
 <h3 id="treinando-modelo-preditivo-com-o-algorítimo-de-regressão-linear">Treinando modelo preditivo com o algorítimo de regressão linear</h3>
-<p align="justify">Após a seleção das variáveis foi treinado o modelo de regressão linear. A seguir uma tabela com o desempenho do modelo.</p>
+<p align="justify">Após a seleção das variáveis foi treinado o modelo de regressão linear.</p>
 <pre><code>    modelo_lm &lt;- lm(Demanda_uni_equil ~ Venta_uni_hoy +
                             Venta_hoy +
                             Canal_ID +
@@ -607,6 +607,7 @@ varImpPlot(modelo_rf1,main=&quot;Importânica Variávies&quot;)
     scores &lt;- data.frame(actual = test$Demanda_uni_equil,
                       predicted = predict(modelo_lm, newdata = test[-11]))
 </code></pre>
+<p align="justify">A seguir uma tabela com o desempenho do modelo.</p>
 <table>
 <thead>
 <tr>
