@@ -234,11 +234,11 @@ baseado na sua jornada (ip, app, dispositivo, hora do clique e outros).</p>
 Este site é amplamente utilizado por cientistas de dados que querem colocar o seu conhecimento à prova.
 Foi utilizado o dataset train_sample, que possui menos registros, pois não estou utilizando nenhuma técnica de Big Data. Portanto, foi feita uma análise estatística inferencial.</p>
 <h4 id="dicionário-de-dados">Dicionário de Dados:</h4>
-<table id="t01">
+<table>
   <thead>
     <tr>
-      <th>Variável</th>
-      <th>Descrição</th>
+      <th  style="background-color: black; color:white" >Variável</th>
+      <th  style="background-color: black; color:white">Descrição</th>
     </tr>
   </thead>
   <tbody>
@@ -307,7 +307,7 @@ interessa saber é apenas se houve o download.</p>
 <h3 id="verificando-os-valores-únicos-para-as-variáveis">Verificando os valores únicos para as variáveis</h3>
 <pre><code>unique_values &lt;- as.data.frame(lapply(train_sample, function(x)length(unique(x))))
 </code></pre>
-<table id="t01">
+<table>
 <thead>
 <tr>
 <th>Variáveis</th>
@@ -377,7 +377,7 @@ interessa saber é apenas se houve o download.</p>
 <h4 id="distribuição-da-variável-nip_day_h">Distribuição da variável nip_day_h:</h4>
 <pre><code>summary(train_sample$nip_day_h)
 </code></pre>
-<table id="t01">
+<table>
 <thead>
 <tr>
 <th>Medida</th>
@@ -431,7 +431,7 @@ não realizam. São essas diferenças que o modelo preditivo vai aprender e util
 <h4 id="balanceamento-do-dataset">Balanceamento do dataset:</h4>
 <pre><code>table(train_sample$is_attributed)
 </code></pre>
-<table id="t01">
+<table>
 <thead>
 <tr>
 <th>Download</th>
@@ -517,7 +517,7 @@ best.test=predict(best.radial,newdata=test,type=&quot;class&quot;)
 confusionMatrix(best.test,test$is_attributed)
 </code></pre>
 <h4 id="resultados">Resultados:</h4>
-<table id="t01">
+<table>
 <thead>
 <tr>
 <th>Algoritmo</th>
@@ -548,7 +548,7 @@ confusionMatrix(best.test,test$is_attributed)
 <pre><code>nb_multiple_runs(train, 20)
 </code></pre>
 <h4 id="variação-do-resultado-dos-modelos">Variação do resultado dos modelos:</h4>
-<table id="t01">
+<table>
 <thead>
 <tr>
 <th>Medida</th>
